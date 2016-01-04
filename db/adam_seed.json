@@ -1,0 +1,12 @@
+[{
+	"Restaurant": "Example",
+	"NameOfDish": "Example",
+	"Tags": ["Example", "Example Two"],
+	"Ingredients": "Example",
+	"Directions": "Example",
+	"PrepTime": "Example",
+	"CookTime": "Example",
+	"Image": "Example",
+	"SourceName": "Example",
+	"SourceLink": "Example"
+}]
