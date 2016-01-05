@@ -17,7 +17,17 @@ app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
     success: function(data) {
         console.log("success");
         console.log(data);
+        
+        var recipeTemplate = $('#recipe-template').html();
+        console.log('Transforming template');
+        var compileTpl = _.template(recipeTemplate);
+        console.log('Creating HTML from template & model data');
+        var html = compileTpl(data);
+        // console.log(html);
+        console.log('Rendering to page....');
+        $('#recipe-listing').html("");
 
+        $('#recipe-listing').append(html);
 
     },
     error: function(error) {
