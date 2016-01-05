@@ -1,0 +1,21 @@
+input {
+    height: 2em;
+    width: 100%;
+    /* 100% of container col.*/
+    font-size: 1.5em;
+}
+#search-area {
+    background-color: #183a4c;
+    /*background-image: url("../media/kitchen_homepage.jpg");*/
+    background-image: url(kitchen_homepage.jpeg);
+    background-size: cover;
+    background-blend-mode: lighten;
+    color: white;
+}
+#homepage-search {
+    color: #183a4c;
+}
+/*get image new,
+save to css
+
+*/
