@@ -1,2 +1,33 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+
+<h2>Recipe Listing</h2>
+<section id='recipe-listing'>
+</section>
+
+
+<!-- defining an underscore.js template -->
+<script type='text/template' id='recipe-template'>
+<article>
+<ul>
+  <li><strong>Restaurant</strong>: <%= Restaurant %></li>
+  <li><strong>Name of Dish</strong>: <%= NameOfDish %></li>
+  <li><strong>Tags</strong>: <%= Tags %></li>
+  {{#each .}}<li><strong>Ingredients</strong>: <%= Ingredients %></li>{{/each}}
+  <li><strong>Directions</strong>: <%= Directions %></li>
+  <li><strong>CookTime</strong>: <%= CookTime %></li>
+  <li><strong>RecipeImage</strong>: <%= RecipeImage %></li>
+  <li><strong>Source</strong>: <a href="TBD - SourceLink"><%= SourceName %></a></li>
+</ul>
+<p>
+
+
+
+
+</article>
+</script>
+
+<!-- loading custom app -->
+<script src='/javascripts/app.js'></script>
+<!-- will add in app.views later -->
