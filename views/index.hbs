@@ -14,8 +14,8 @@
   <li><strong>Restaurant</strong>: <%= Restaurant %></li>
   <li><strong>Name of Dish</strong>: <%= NameOfDish %></li>
   <li><strong>Tags</strong>: <%= Tags %></li>
-  <li><strong>Ingredients</strong>: <%= Ingredients %></li>
-  <li><strong>Directions</strong>: <%= Directions[1] %></li>
+  {{#each .}}<li><strong>Ingredients</strong>: <%= Ingredients %></li>{{/each}}
+  <li><strong>Directions</strong>: <%= Directions %></li>
   <li><strong>CookTime</strong>: <%= CookTime %></li>
   <li><strong>RecipeImage</strong>: <%= RecipeImage %></li>
   <li><strong>Source</strong>: <a href="TBD - SourceLink"><%= SourceName %></a></li>
