@@ -62,18 +62,6 @@
 	"SourceLink": "http://www.instructables.com/id/Black-Pepper-Garlic-Chicken/"
 },
 {
-	"Restaurant": "Example",
-	"NameOfDish": "Example",
-	"Tags": ["Example", "Example Two"],
-	"Ingredients": "Example",
-	"Directions": "Example",
-	"PrepTime": "Example",
-	"CookTime": "Example",
-	"Image": "Example",
-	"SourceName": "Example",
-	"SourceLink": "Example"
-},
-{
 	"Restaurant": "California Pizza Kitchen",
 	"NameOfDish": "California Pizza Kitchen Moroccan Chicken Salad",
 	"Tags": ["salad", "healthy"],
@@ -85,8 +73,6 @@
 	"SourceName": "food.com",
 	"SourceLink": "http://www.food.com/recipe/moroccan-chicken-salad-california-pizza-kitchen-copycat-408831"
 },
-
-
 {
 	"Restaurant": "California Pizza Kitchen",
 	"NameOfDish": "California Pizza Kitchen Thai Chicken Pizza",
@@ -99,8 +85,6 @@
 	"SourceName": "food.com",
 	"SourceLink": "http://www.food.com/recipe/california-pizza-kitchen-thai-chicken-pizza-62778"
 },
-
-
 {
 	"Restaurant": "California Pizza Kitchen",
 	"NameOfDish": "California Pizza Kitchen Original BBQ Pizza",
@@ -122,5 +106,4 @@
 	"SourceName": "copykat.com",
 	"SourceLink": "http://www.copykat.com/2009/02/03/california-pizza-kitchen-original-bbq-pizza/"
 },
-
 ]
