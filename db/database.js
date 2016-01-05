@@ -1,10 +1,10 @@
 var mongoose = require('mongoose');
-var connectionString = 'mongodb://localhost/copychefapi';
+var connectionString = 'mongodb://localhost/copychef';
 
 mongoose.connect(connectionString);
 
 mongoose.connection.on('connected', function(){
-  console.log('CopyChef is theifing!');
+  console.log('CopyChef is thieving!');
 });
 
 mongoose.connection.on('error', function(err){
