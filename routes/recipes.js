@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 
 router.get('/:id', function(req, res, next) {
-  model.find(req.params.id, function (err, recipe){
+  model.findById(req.params.id, function (err, recipe){
     if (err) console.log(error);
     res.json(recipe);
   });
