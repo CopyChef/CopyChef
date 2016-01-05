@@ -56,6 +56,11 @@ app.ModelView = Backbone.View.extend({
   render: function(){
     console.log('ModelView is rendering.');
     var data = this.model.attributes;
+    // console.log('LOOK HERE');
+    // var keys = Object.keys(data)
+    // console.log(data[keys[4]]);
+
+
     console.log('Grabbing template');
     var recipeTemplate = $('#recipe-template').html();
     console.log('Transforming template');
