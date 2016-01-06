@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- cdn links -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <!-- icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- cdn links not used. using local files for materialie -->
+        <!-- <link  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script> -->
+
+        <!-- local links  -->
+        <link rel="stylesheet" href="css/materialize.min.css" media="screen" title="no title" charset="utf-8">
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+
+        <meta charset="utf-8">
+        <title>CopyChef</title>
+    </head>
+    <body>
+        <nav>
+            <div class="navbar-wrapper container">
+                <a href="#" class="brand-logo left">Copy Chef Chicago</a>
+                <!-- <form>
+                    <div class="input-field">
+                      <input id="search" type="search" required>
+                      <label for="search"><i class="material-icons">search</i></label>
+                      <i class="material-icons">close</i>
+                    </div>
+                </form> -->
+                <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+                <ul class="right hide-on-small-only">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            <!-- trouble with these nav items... figure out later -->
+            <!-- <div class="navbar-wrapper container">
+                <div class="col l3 m4 s6 amber">
+                    <a href="#" class="brand-logo">Copy Chef Chicago</a>
+                </div>
+                <div class="col l3 m4 s6 teal">
+                    <form id="navbar-search" class="" action="index.html" method="post">
+                        <input type="" name="name" value="" placeholder="">
+                        <input type="submit" name="name" value="Go">
+                    </form>
+                </div>
+                <div class="red">
+                    <h3>keyword dropdown</h3>
+                </div> -->
+
+                <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+                <!-- <div class="col l3 m4 s6 blue">
+                    <ul class="right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Signup</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div> -->
+
+            <!-- </div> -->
+
+
+        <!-------------------------------->
+        <!-- individual recipe heading  -->
+        <!-------------------------------->
+        <div class="section" id="recipe-heading">
+            <h3>Black Pepper Garlic Chicken</h3>
+            <h4>Panda Express</h4>
+            <div class="card-recipe-tags">
+                <div class="chip">tag</div>
+                <div class="chip">tag</div>
+            </div>
+        </div>
+        <!-------------------------------->
+        <!-- individual recipe image(s) -->
+        <!-------------------------------->
+        <div class="section">
+            <div class="row">
+                <div class="col s1 m3 l4">
+                    <p>.</p>
+                </div>
+                <div class="col s10 m6 l4">
+                    <img id="recipe-main-image" src="css/portillos-burger.jpg" alt="Portillo's Hamburger" />
+                </div>
+                <div class="col s1 m3 l4">
+                    <p>.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-------------------------------->
+        <!--     cook time section      -->
+        <!-------------------------------->
+        <div class="section">
+
+            <div class="row" id="cook-time-row">
+                <div class="col l3 m3 s0">
+                    <p>.</p>
+                </div>
+                <div class="col l3 m3 s6">
+                    <h6>TOTAL TIME <i class="material-icons">schedule</i></h6>
+                    <h4>30 MINS</h4>
+                </div>
+                <div class="col l3 m3 s6">
+                    <h6>PREP 30 MINS</h6>
+                    <h6>COOK 30 MINS</h6>
+                </div>
+                <div class="col l3 m3 s0">
+                    <p>.</p>
+                </div>
+            </div> <!-- end row -->
+
+            <div class="divider"></div>
+
+        <!-------------------------------->
+        <!--  ingredients & directions  -->
+        <!-------------------------------->
+        <div class="section">
+
+        <div class="row" id="directions-section">
+            <div class="col l3 m3 s0">
+                <p>.</p>
+            </div>
+            <div class="col l3 m3 s6">
+                <h4>INGREDIENTS</h4>
+                <ul class="directions-list">
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                    <li>Ingredients array item</li>
+                </ul>
+            </div>
+            <div class="col l3 m3 s6">
+                <h4>DIRECTIONS</h4>
+                <ul class="directions-list">
+                    <li>Directions array item</li>
+                    <li>Directions array item</li>
+                    <li>Directions array item</li>
+                    <li>Directions array item</li>
+                    <li>Directions array item</li>
+                    <li>Directions array item</li>
+                </ul>
+            </div>
+            <div class="col l3 m3 s0">
+                <p>.</p>
+            </div>
+        </div> <!-- end row -->
+
+    </div> <!-- end section -->
+
+    <div class="divider"></div>
+
+    <!------------------------------->
+    <!-- sourcename and sourcelink -->
+    <!------------------------------->
+    <div class="section">
+        <div class="row">
+            <div class="col l3 m3 s0">
+                <p>.</p>
+            </div>
+            <div class="col l6 m6 s12">
+                <p>Source: <a href="http://www.food.com/recipe/portillos-italian-beef-sandwiches-29955?mode=us&st=true&scaleto=2&photo=33811"> Food.com</a></p>
+            </div>
+            <div class="col l3 m3 s0">
+                <p>.</p>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end section -->
+
+
+    </body>
+</html>
