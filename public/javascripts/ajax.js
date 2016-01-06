@@ -12,7 +12,7 @@ app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
 
   var ajaxArgument = {
     type: 'get',
-    url: 'http://localhost:3000/recipes/' + restaurant,
+    url: 'http://localhost:3000/recipes/search/' + restaurant,
     dataType: 'json',
     success: function(data) {
         console.log("success");
@@ -22,7 +22,8 @@ app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
         console.log('Transforming template');
         var compileTpl = _.template(recipeTemplate);
         console.log('Creating HTML from template & model data');
-        var html = compileTpl(data);
+        
+        var html = compileTpl(data[0]);
         // console.log(html);
         console.log('Rendering to page....');
         $('#recipe-listing').html("");
