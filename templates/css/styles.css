@@ -1,8 +1,13 @@
+body {
+    color: #353A3B;
+}
 input {
     height: 2em;
     width: 100%;
-    /* 100% of container col.*/
     font-size: 1.5em;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
 }
 #search-area {
     background-color: #183a4c;
@@ -15,7 +20,40 @@ input {
 #homepage-search {
     color: #183a4c;
 }
-/*get image new,
-save to css
+#navbar-search {
 
-*/
+}
+.brand-logo {
+    position: relative;
+    display: block;
+}
+.card-image {
+    width: 100%;
+    height: 55%;
+}
+.card-panel {
+    padding: 10px;
+    min-height: 350px;
+}
+#recipe-heading {
+    text-align: center;
+}
+#recipe-main-image {
+    width: 100%;
+    max-height: 350px;
+}
+.directions-list {
+    font-size: 1.5em;
+    font-weight: thin;
+    line-height: 200%;
+}
+.material-icons {
+    vertical-align: middle;
+}
+
+/*attempt to make image fill full width of card
+messed up other styling
+.card-panel {
+    padding: 0px;
+    padding-top: 10px;
+}*/
