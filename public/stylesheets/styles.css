@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 #search-area {
     background-color: #183a4c;
     /*background-image: url("../media/kitchen_homepage.jpg");*/
-    background-image: url(kitchen_homepage.jpeg);
+    background-image: url(../media/kitchen_homepage.jpeg);
     background-size: cover;
     background-blend-mode: lighten;
     color: white;
@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
 .card-panel {
     padding: 10px;
     min-height: 350px;
+}
+/*.card-title { this didn't work...
+    text-align: right;
+}*/
+#recipe-image-section {
+    background-color: #FAF9F5;
 }
 #recipe-heading {
     text-align: center;
