@@ -2,9 +2,19 @@
 <p>Welcome to {{title}}</p>
 
 
+
+<div class="search">
+  <form id="restaurant-search-form" method="get">
+    <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40">
+    <input type="submit" value="Search by restaurant!">
+  </form>
+</div>
+
 <h2>Recipe Listing</h2>
 <section id='recipe-listing'>
 </section>
+
+
 
 
 <!-- defining an underscore.js template -->
@@ -14,7 +24,7 @@
   <li><strong>Restaurant</strong>: <%= Restaurant %></li>
   <li><strong>Name of Dish</strong>: <%= NameOfDish %></li>
   <li><strong>Tags</strong>: <%= Tags %></li>
-  {{#each .}}<li><strong>Ingredients</strong>: <%= Ingredients %></li>{{/each}}
+  <li><strong>Ingredients</strong>: <%= Ingredients %></li>
   <li><strong>Directions</strong>: <%= Directions %></li>
   <li><strong>CookTime</strong>: <%= CookTime %></li>
   <li><strong>RecipeImage</strong>: <%= RecipeImage %></li>
@@ -30,4 +40,5 @@
 
 <!-- loading custom app -->
 <script src='/javascripts/app.js'></script>
+<script src='/javascripts/ajax.js'></script>
 <!-- will add in app.views later -->
