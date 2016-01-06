@@ -8,7 +8,7 @@ $("#restaurant-search-form").on("submit", function(event) {
 
 app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
 
-  console.log("app.getRecipeByRestaurant() has been called. The user searched for" + restaurant);
+  console.log("app.getRecipeByRestaurant() has been called. The user searched for " + restaurant);
 
   var ajaxArgument = {
     type: 'get',
@@ -17,7 +17,7 @@ app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
     success: function(data) {
         console.log("success");
         console.log(data);
-        
+
         var recipeTemplate = $('#recipe-template').html();
         console.log('Transforming template');
         var compileTpl = _.template(recipeTemplate);
