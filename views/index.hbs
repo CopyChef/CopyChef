@@ -1,63 +1,114 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-
-
-
 <div class="search">
   <form id="restaurant-search-form" method="get">
-    <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40">
-    <input type="submit" value="Search by restaurant!">
+
+    <!-- <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40"> -->
+  <select name="restaurant">
+    <option>Select Restaurant</option>
+    <option value="California Pizza Kitchen">California Pizza Kitchen</option>
+    <option value="The Cheesecake Factory">The Cheesecake Factory</option>
+    <option value="Chipotle">Chipotle</option>
+    <option value="Olive Garden">Olive Garden</option>
+    <option value="Panda Express">Panda Express</option>
+    <option value="Panera Bread">Panera Bread</option>
+    <option value="PF Chang's">PF Chang's</option>
+    <option value="Portillos">Portillos</option>
+    <option value="Potbelly Sandwich Shop">Potbelly Sandwich Shop</option>
+    <option value="Red Lobster">Red Lobster</option>
+    <option value="Starbucks">Starbucks</option>
+    <option value="TGI FridayS">TGI Fridays</option>
+</select>
+
+    <!-- <input type="submit" value="Search by restaurant!"> -->
   </form>
 </div>
 
-<h2>Recipe Listing</h2>
-<section id='recipe-listing'>
-</section>
 
 
+<div class="section" id="search-area">
+    <div class="container">
+        <div class="row">
+            <h1>Get Recipes by Restaurant or Keyword</h1>
+        </div>
+        <div class="row">
+            <div class="col l6 m6 s12">
+                <form id="homepage-search" class="" action="index.html" method="post">
+                    <input type="" name="name" value="" placeholder=""><br><br>
+                    <input type="submit" name="name" value="Get Recipes">
+                </form>
+            </div>
+            <div class="col l6 m6 s12">
+                <h4>Keyword Searches</h4>
+                <div class="divider"></div>
+                <h6>Restaurants</h6>
+                <div class="divider"></div>
+                <h6>Appetizers</h6>
+                <div class="divider"></div>
+                <h6>Restaurants</h6>
+                <div class="divider"></div>
+                <h6>Appetizers</h6>
+                <div class="divider"></div>
+                <h6>Restaurants</h6>
+                <div class="divider"></div>
 
 
-<!-- defining an underscore.js template -->
-<script type='text/template' id='recipe-template'>
-<article>
-<ul>
-  <li><strong>Restaurant</strong>: <%= Restaurant %></li>
-  <li><strong>Name of Dish</strong>: <%= NameOfDish %></li>
-
-  <li><strong>Tags</strong>:</li>
-    <ul>
-      <% for (var i = 0; i < Tags.length; i++) { %>
-      <li><%= Tags[i] %></li>
-      <%  } %>
-    </ul>
-
-    <li><strong>Ingredients</strong>:</li>
-      <ul>
-        <% for (var i = 0; i < Ingredients.length; i++) { %>
-        <li><%= Ingredients[i] %></li>
-        <%  } %>
-      </ul>
-
-    <li><strong>Directions</strong>:</li>
-      <ol>
-        <% for (var i = 0; i < Directions.length; i++) { %>
-        <li><%= Directions[i] %></li>
-        <%  } %>
-      </ol>
-
-  <li><strong>CookTime</strong>: <%= CookTime %></li>
-  <li><strong>RecipeImage</strong>: <img src=<%= RecipeImage %>></li>
-  <li><strong>Source</strong>: <a href=<%= SourceLink %>><%= SourceName %></a></li>
-</ul>
-<p>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+<div class="section">
 
+  <!-- <div class="container"> -->
+    <div class="row">
 
-</article>
-</script>
+      <section id='recipe-listing'>
+      </section>
+      <script type="text/javascript">
+      function ImgError(source){
+          source.src = "https://www.newstalk.com/content/000/images/000095/97784_60_news_hub_multi_630x0.png";
+          source.onerror = "";
+          return true;
+      }
+      </script>
+<!-- start template -->
+      <script type='text/template' id='recipe-template'>
+      <article>
+      <!-- card w image from docs -->
+      <div class="col l3 m4 s6">
+        <div class="card hoverable">
+          <div class="card-image">
 
-<!-- loading custom app -->
+            <img src="<%= RecipeImage %>" onerror="ImgError(this)" />
+            <span class="card-title">
+              <p><i class="material-icons">schedule</i><%= CookTime %></p>
+            </span>
+          </div>
+          <div class="card-content">
+            <h5><%= Restaurant %> <%= NameOfDish %></h5>
+            <div class="card-recipe-tags">
+              <!-- <div class="chip">tag</div> -->
+              <% for (var i = 0; i < Tags.length; i++) { %>
+              <div class="chip"><%= Tags[i] %></div>
+              <%  } %>
+            </div>
+          </div>
+          <!-- <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div> -->
+        </div>
+      </div>
+      <!-- end card -->
+
+    </article>
+  </script>
+  <!-- end template -->
+
+    </div>
+    <!-- end section -->
+  <!-- </div> -->
+  <!-- end container -->
+
+</div>
 <script src='/javascripts/app.js'></script>
 <script src='/javascripts/ajax.js'></script>
-<!-- will add in app.views later -->

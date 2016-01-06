@@ -11,20 +11,20 @@ router.get('/', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
   model.findById(req.params.id, function (err, recipe){
-    if (err) console.log(error);
+    if (err) console.log(err);
     // res.json(recipe);
-    res.render('practice', recipe);
+            res.render('practice', recipe);
   });
 });
 
 // Router for Restaurant search
-router.get('/search/:Restaurant', function(req, res, next) {
-  model.find({ Restaurant: req.params.Restaurant}, function (err, recipe){
-    if (err) console.log(error);
-    res.json(recipe);
-  });
-
-});
+// router.get('/:Restaurant', function(req, res, next) {
+//   model.where({ Restaurant: req.params.Restaurant}, function (err, recipe){
+//     if (err) console.log(err);
+//     res.json(recipe);
+//   });
+//
+// });
 // End router for Restaurant search
 
 

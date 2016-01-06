@@ -14,11 +14,4 @@ router.get('/', function(req, res, next) {
   res.render('index', data);
 });
 
-/* GET home page. */
-router.get('/recipe', function(req, res, next) {
-  var data = siteData;
-  data.user = req.user;
-  res.render('practice', data);
-});
-
 module.exports = router;
