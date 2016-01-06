@@ -4,7 +4,7 @@ var model = require('../models/Recipe');
 
 router.get('/', function(req, res, next) {
   model.find(function (err, recipes){
-    if (err) console.log(error);
+    if (err) console.log(err);
     res.json(recipes);
   });
 });
@@ -30,14 +30,14 @@ router.get('/:id', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   model.create(req.body, function (err, recipe){
-    if (err) console.log(error);
+    if (err) console.log(err);
     res.json(recipe);
   });
 });
 
 router.put('/:id', function(req, res, next) {
   model.findByIdAndUpdate(req.params.id, req.body, function (err, recipe){
-    if (err) console.log(error);
+    if (err) console.log(err);
     res.json(recipe);
   });
 });
