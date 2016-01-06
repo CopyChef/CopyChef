@@ -84,4 +84,5 @@ $(document).ready(function(){
   // active.createRecipeView = new app.addRecipeView({
   //   collection: active.collection
   // }); this will be different for us once we get our layouts and such together
+  $(".button-collapse").sideNav(); // for collapsible navbar
 });
