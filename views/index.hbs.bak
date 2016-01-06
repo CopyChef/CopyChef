@@ -1,0 +1,63 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+
+
+<div class="search">
+  <form id="restaurant-search-form" method="get">
+    <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40">
+    <input type="submit" value="Search by restaurant!">
+  </form>
+</div>
+
+<h2>Recipe Listing</h2>
+<section id='recipe-listing'>
+</section>
+
+
+
+
+<!-- defining an underscore.js template -->
+<script type='text/template' id='recipe-template'>
+<article>
+<ul>
+  <li><strong>Restaurant</strong>: <%= Restaurant %></li>
+  <li><strong>Name of Dish</strong>: <%= NameOfDish %></li>
+
+  <li><strong>Tags</strong>:</li>
+    <ul>
+      <% for (var i = 0; i < Tags.length; i++) { %>
+      <li><%= Tags[i] %></li>
+      <%  } %>
+    </ul>
+
+    <li><strong>Ingredients</strong>:</li>
+      <ul>
+        <% for (var i = 0; i < Ingredients.length; i++) { %>
+        <li><%= Ingredients[i] %></li>
+        <%  } %>
+      </ul>
+
+    <li><strong>Directions</strong>:</li>
+      <ol>
+        <% for (var i = 0; i < Directions.length; i++) { %>
+        <li><%= Directions[i] %></li>
+        <%  } %>
+      </ol>
+
+  <li><strong>CookTime</strong>: <%= CookTime %></li>
+  <li><strong>RecipeImage</strong>: <img src=<%= RecipeImage %>></li>
+  <li><strong>Source</strong>: <a href=<%= SourceLink %>><%= SourceName %></a></li>
+</ul>
+<p>
+
+
+
+
+</article>
+</script>
+
+<!-- loading custom app -->
+<script src='/javascripts/app.js'></script>
+<script src='/javascripts/ajax.js'></script>
+<!-- will add in app.views later -->
