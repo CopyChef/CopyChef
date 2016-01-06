@@ -22,13 +22,14 @@ app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
         console.log('Transforming template');
         var compileTpl = _.template(recipeTemplate);
         console.log('Creating HTML from template & model data');
-        
-        var html = compileTpl(data[0]);
-        // console.log(html);
-        console.log('Rendering to page....');
         $('#recipe-listing').html("");
-
-        $('#recipe-listing').append(html);
+            for (var i = 0; i < data.length; i++) {
+              var html = compileTpl(data[i]);
+              console.log('Rendering to page....');
+              $('#recipe-listing').append(html);
+            }
+        // console.log(html);
+        
 
     },
     error: function(error) {
