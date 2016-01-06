@@ -18,13 +18,13 @@ router.get('/:id', function(req, res, next) {
 });
 
 // Router for Restaurant search
-// router.get('/:Restaurant', function(req, res, next) {
-//   model.where({ Restaurant: req.params.Restaurant}, function (err, recipe){
-//     if (err) console.log(error);
-//     res.json(recipe);
-//   });
-//
-// });
+router.get('/search/:Restaurant', function(req, res, next) {
+  model.find({ Restaurant: req.params.Restaurant}, function (err, recipe){
+    if (err) console.log(error);
+    res.json(recipe);
+  });
+
+});
 // End router for Restaurant search
 
 
