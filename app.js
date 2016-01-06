@@ -24,6 +24,9 @@ var accounts = require('./routes/accounts');//
 
 var app = express();
 
+
+
+
 //instantly enable session
 app.use(require('express-session')({
   secret: 'im a terrible cook',
