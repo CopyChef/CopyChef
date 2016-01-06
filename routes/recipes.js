@@ -56,5 +56,26 @@ router.delete('/:id', function(req, res, next) {
   });
 });
 
+router.get('/find/:keyword', function(req, res) {
+  model.find({ 'Restaurant': req.params.keyword,  }, function(err, results) {
+    console.log(results);
+    res.json(results);
+  });
+});
+
+router.post('/submit', function(req, res) {
+
+  var input = req.body;
+  console.log(input);
+  // modify input to match requirements, parse floats, etc
+  model.create({
+
+  }, function(err, result) {
+    if (err) console.log(err);
+    res.json(result);
+  })
+
+});
+
 
 module.exports = router;

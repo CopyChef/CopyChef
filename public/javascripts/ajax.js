@@ -1,4 +1,10 @@
-$("#restaurant-search-form").on("submit", function(event) {
+// $("#restaurant-search-form").on("submit", function(event) {
+//   event.preventDefault();
+//   var restaurant = $(":input[name=restaurant]", this).val();
+//   app.getRecipeByRestaurant(restaurant);
+// });
+
+$("#restaurant-search-form").change(function(event) {
   event.preventDefault();
   var restaurant = $(":input[name=restaurant]", this).val();
   app.getRecipeByRestaurant(restaurant);
@@ -29,7 +35,7 @@ app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
               $('#recipe-listing').append(html);
             }
         // console.log(html);
-        
+
 
     },
     error: function(error) {
