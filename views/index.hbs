@@ -23,12 +23,31 @@
 <ul>
   <li><strong>Restaurant</strong>: <%= Restaurant %></li>
   <li><strong>Name of Dish</strong>: <%= NameOfDish %></li>
-  <li><strong>Tags</strong>: <%= Tags %></li>
-  <li><strong>Ingredients</strong>: <%= Ingredients %></li>
-  <li><strong>Directions</strong>: <%= Directions %></li>
+
+  <li><strong>Tags</strong>:</li>
+    <ul>
+      <% for (var i = 0; i < Tags.length; i++) { %>
+      <li><%= Tags[i] %></li>
+      <%  } %>
+    </ul>
+
+    <li><strong>Ingredients</strong>:</li>
+      <ul>
+        <% for (var i = 0; i < Ingredients.length; i++) { %>
+        <li><%= Ingredients[i] %></li>
+        <%  } %>
+      </ul>
+
+    <li><strong>Directions</strong>:</li>
+      <ol>
+        <% for (var i = 0; i < Directions.length; i++) { %>
+        <li><%= Directions[i] %></li>
+        <%  } %>
+      </ol>
+
   <li><strong>CookTime</strong>: <%= CookTime %></li>
-  <li><strong>RecipeImage</strong>: <%= RecipeImage %></li>
-  <li><strong>Source</strong>: <a href="TBD - SourceLink"><%= SourceName %></a></li>
+  <li><strong>RecipeImage</strong>: <img src=<%= RecipeImage %>></li>
+  <li><strong>Source</strong>: <a href=<%= SourceLink %>><%= SourceName %></a></li>
 </ul>
 <p>
 
