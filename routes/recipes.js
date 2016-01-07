@@ -28,6 +28,30 @@ router.get('/search/:Restaurant', function(req, res, next) {
 });
 // End router for Restaurant search
 
+// Router for any search
+router.get('/search_all/:keyword', function(req, res, next) {
+  model.find({ Restaurant: req.params.keyword}, function (err, recipe){
+    if (err) {
+      console.log(error);
+    } else if (recipe == "") {
+      console.log('test one');
+      model.find({ NameOfDish: req.params.keyword}, function (err, recipe){
+        if (recipe != "") {
+          res.json(recipe);
+        } else {
+          model.find({ Tags: req.params.keyword}, function (err, recipe){
+            res.json(recipe);
+          });
+        }
+      });
+    } else {
+      res.json(recipe);
+    }
+  });
+
+});
+// End router for any search
+
 
 router.post('/', function(req, res, next) {
   model.create(req.body, function (err, recipe){
