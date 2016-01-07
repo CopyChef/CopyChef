@@ -48,7 +48,7 @@ app.CollectionView = Backbone.View.extend({
 
 });
 
-var testing = [];
+var allTags = [];
 
 app.ModelView = Backbone.View.extend({
   initialize: function(){
@@ -58,36 +58,24 @@ app.ModelView = Backbone.View.extend({
   render: function(){
     console.log('ModelView is rendering.');
     var data = this.model.attributes;
-    // console.log('LOOK HERE');
-    // console.log(data.Restaurant);
-    testing.push(data.NameOfDish);
-
+    allTags.push(data.NameOfDish);
     var newFilter = data.Restaurant
-    var found = jQuery.inArray(newFilter, testing);
+    var found = jQuery.inArray(newFilter, allTags);
     if (found >= 0) {
     } else {
         // Element was not found, add it.
-        testing.push(newFilter);
+        allTags.push(newFilter);
     }
-
-    // testing.push(data.Restaurant);
     for (var i = 0; i < data.Tags.length; i++) {
-
       var newFilter = data.Tags[i]
-      var found = jQuery.inArray(newFilter, testing);
+      var found = jQuery.inArray(newFilter, allTags);
       if (found >= 0) {
       } else {
           // Element was not found, add it.
-          testing.push(newFilter);
+          allTags.push(newFilter);
       }
-
-
-
-      // testing.push(data.Tags[i]);
     }
-    console.log(testing);
-    // var keys = Object.keys(data)
-    // console.log(data[keys[4]]);
+
 
 
     console.log('Grabbing template');
