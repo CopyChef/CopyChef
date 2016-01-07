@@ -1,8 +1,8 @@
-<div class="search">
-  <form id="restaurant-search-form" method="get">
+<!-- <div class="search">
+  <form id="restaurant-search-form" method="get"> -->
 
-    <!-- <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40"> -->
-  <select name="restaurant">
+<!-- <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40"> -->
+<!-- <select name="restaurant">
     <option>Select Restaurant</option>
     <option value="California Pizza Kitchen">California Pizza Kitchen</option>
     <option value="The Cheesecake Factory">The Cheesecake Factory</option>
@@ -16,26 +16,53 @@
     <option value="Red Lobster">Red Lobster</option>
     <option value="Starbucks">Starbucks</option>
     <option value="TGI FridayS">TGI Fridays</option>
-</select>
+</select> -->
 
-    <!-- <input type="submit" value="Search by restaurant!"> -->
-  </form>
-</div>
+<!-- <input type="submit" value="Search by restaurant!"> -->
+<!-- </form>
+</div> -->
 
 
 
 <div class="section" id="search-area">
-    <div class="container">
-        <div class="row">
-            <h1>Get Recipes by Restaurant or Keyword</h1>
-        </div>
-        <div class="row">
+
+  <div class="container">
+    <div class="row">
+      <div class="col l7">
+        <h1>Get Recipes by Restaurant or Keyword</h1>
+      </div>
+      <!-- <select name="dropdown">
+        <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+        <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+        <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+      </select> -->
+      <!-- <div class="col l4">
+          <h4>Keyword Searches</h4>
+          <div class="divider"></div>
+          <h6>Restaurants</h6>
+          <div class="divider"></div>
+          <h6>Appetizers</h6>
+          <div class="divider"></div>
+          <h6>Restaurants</h6>
+          <div class="divider"></div>
+          <h6>Appetizers</h6>
+          <div class="divider"></div>
+          <h6>Restaurants</h6>
+          <div class="divider"></div>
+
+
+      </div> -->
+    </div>
+
+
+    <!-- <div class="row">
             <div class="col l6 m6 s12">
                 <form id="homepage-search" class="" action="index.html" method="post">
                     <input type="" name="name" value="" placeholder=""><br><br>
                     <input type="submit" name="name" value="Get Recipes">
                 </form>
             </div>
+
             <div class="col l6 m6 s12">
                 <h4>Keyword Searches</h4>
                 <div class="divider"></div>
@@ -52,63 +79,72 @@
 
 
             </div>
-        </div>
-    </div>
+        </div> -->
+  </div>
 </div>
 
 
 <div class="section">
-
-  <!-- <div class="container"> -->
+  <div class="container">
+    <!-- <div class="container"> -->
     <div class="row">
 
       <section id='recipe-listing'>
       </section>
       <script type="text/javascript">
-      function ImgError(source){
+        function ImgError(source) {
           source.src = "https://www.newstalk.com/content/000/images/000095/97784_60_news_hub_multi_630x0.png";
           source.onerror = "";
           return true;
-      }
+        }
       </script>
-<!-- start template -->
+      <!-- start template -->
       <script type='text/template' id='recipe-template'>
-      <article>
-      <!-- card w image from docs -->
-      <div class="col l3 m4 s6">
-        <div class="card hoverable">
-          <div class="card-image">
+        <article>
+          <!-- card w image from docs -->
+          <div class="col s12 m6 l4">
+            <div class="card hoverable ">
+              <div class="card-image">
 
-            <img src="<%= RecipeImage %>" onerror="ImgError(this)" />
-            <span class="card-title">
-              <p><i class="material-icons">schedule</i><%= CookTime %></p>
-            </span>
-          </div>
-          <div class="card-content">
-            <h5><%= Restaurant %> <%= NameOfDish %></h5>
-            <div class="card-recipe-tags">
-              <!-- <div class="chip">tag</div> -->
-              <% for (var i = 0; i < Tags.length; i++) { %>
-              <div class="chip"><%= Tags[i] %></div>
-              <%  } %>
-            </div>
-          </div>
-          <!-- <div class="card-action">
+                <img src="<%= RecipeImage %>" onerror="ImgError(this)" />
+                <span class="card-title">
+                  <h5>
+                    <%= Restaurant %>
+                      <%= NameOfDish %>
+                  </h5>
+                </span>
+              </div>
+              <div class="card-content">
+                <p><i class="material-icons">schedule</i>
+                  <%= CookTime %>
+                </p>
+
+                <div class="card-recipe-tags">
+                  <!-- <div class="chip">tag</div> -->
+                  <% for (var i = 0; i < Tags.length; i++) { %>
+                    <div class="chip">
+                      <%= Tags[i] %>
+                    </div>
+                    <%  } %>
+                </div>
+              </div>
+              <!-- <div class="card-action">
                     <a href="#">This is a link</a>
                   </div> -->
-        </div>
-      </div>
-      <!-- end card -->
+            </div>
+          </div>
+          <!-- end card -->
 
-    </article>
-  </script>
-  <!-- end template -->
+        </article>
+      </script>
+      <!-- end template -->
 
     </div>
     <!-- end section -->
-  <!-- </div> -->
-  <!-- end container -->
+    <!-- </div> -->
+    <!-- end container -->
 
+  </div>
 </div>
 <script src='/javascripts/app.js'></script>
 <script src='/javascripts/ajax.js'></script>

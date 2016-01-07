@@ -97,7 +97,7 @@
 		"CookTime": "1 hour 30 minutes",
 		"RecipeImage": "http://www.howsweeteats.com/wp-content/uploads/2012/04/cornsalsa-2-2.jpg",
 		"SourceName": "howsweeteats",
-		"SourceLink": "http://www.howsweeteats.com/2012/04/just-like-chipotles-corn-salsa/"
+		"SourceLink": "http://www.howsweeteats.com/2012/04/just-like-chipotles-corn-salsa"
 	},
 
 	{
@@ -132,7 +132,7 @@
 		"CookTime": "25 minutes",
 		"RecipeImage": "http://veryculinary.com/wp-content/uploads/2013/07/Chipotles_Steak_Burrito_vertical_blog.jpg",
 		"SourceName": "Very Culinary",
-		"SourceLink": "http://veryculinary.com/2013/07/22/chipotle-steak-burrito/"
+		"SourceLink": "http://veryculinary.com/2013/07/22/chipotle-steak-burrito"
 	},
 
 	{
@@ -163,7 +163,7 @@
 		"CookTime": "5-6 hours",
 		"RecipeImage": "http://s3-media1.fl.yelpcdn.com/bphoto/AJNd9P-jlgYblOUyEBKlTw/o.jpg",
 		"SourceName": "mommymusings",
-		"SourceLink": "http://www.mommymusings.com/copycat-chipotle-barbacoa-recipe/"
+		"SourceLink": "http://www.mommymusings.com/copycat-chipotle-barbacoa-recipe"
 	},
 
   {
@@ -188,7 +188,7 @@
 		"CookTime": "0-25 minutes",
 		"RecipeImage": "http://www.restaurantnews.com/wp-content/uploads/2014/03/TGI-Fridays-Rotisserie-Chicken-Sandwich-Salad.jpg",
 		"SourceName": "tgifridaysathome",
-		"SourceLink": "http://tgifridaysathome.blogspot.com/"
+		"SourceLink": "http://tgifridaysathome.blogspot.com"
   },
   {
     "Restaurant": "TGI FridayS",
@@ -233,7 +233,7 @@
     "CookTime": "20 minutes",
     "RecipeImage": "http://www.copykat.com/wp-content/uploads/2009/09/potatoskin.jpg",
     "SourceName": "CopyKat Recipes",
-    "SourceLink": "http://www.copykat.com/2009/02/02/tgi-fridays-baked-potato-skins/"
+    "SourceLink": "http://www.copykat.com/2009/02/02/tgi-fridays-baked-potato-skins"
   },
   {
 		"Restaurant": "PF Chang's",
@@ -245,7 +245,7 @@
 		"CookTime": "10 minutes",
 		"RecipeImage": "http://damndelicious.net/wp-content/uploads/2014/05/IMG_0508edit.jpg",
 		"SourceName": "Damn Delicious",
-		"SourceLink": "http://damndelicious.net/2014/05/30/pf-changs-chicken-lettuce-wraps/"
+		"SourceLink": "http://damndelicious.net/2014/05/30/pf-changs-chicken-lettuce-wraps"
 	},
 
 	{
@@ -271,7 +271,7 @@
 		"CookTime": "30 minutes",
 		"RecipeImage": "http://www.jocooks.com/wp-content/uploads/2014/04/pf-changs-mongolian-beef-4.jpg",
 		"SourceName": "Jo Cooks",
-		"SourceLink": "http://www.jocooks.com/main-courses/beef-main-courses/pf-changs-mongolian-beef-copycat-recipe/"
+		"SourceLink": "http://www.jocooks.com/main-courses/beef-main-courses/pf-changs-mongolian-beef-copycat-recipe"
 	}, {
 		"Restaurant": "The Cheesecake Factory",
 		"NameOfDish": "Original Cheesecake",
@@ -370,7 +370,7 @@
 	"CookTime": "30 min",
 	"RecipeImage": "http://therecipecritic.com/wp-content/uploads/2014/01/broccolicheesesouptitle.jpg",
 	"SourceName": "The Recipe Critic",
-	"SourceLink": "http://therecipecritic.com/2014/01/copycat-panera-broccoli-cheese-soup/"
+	"SourceLink": "http://therecipecritic.com/2014/01/copycat-panera-broccoli-cheese-soup"
 },
 
 {
@@ -418,7 +418,7 @@
   "CookTime": "10 min",
   "RecipeImage": "http://www.recipe4living.com/assets/itemRecipeImages/400/400/3/369b51ec9f53ff45c953be9d699b3dfa_90364454.jpg",
   "SourceName": "Recipe4Living",
-  "SourceLink": "http://www.recipe4living.com/recipes/copycat_potbelly_oatmeal_chocolate_chip_cookies.htm/"
+  "SourceLink": "http://www.recipe4living.com/recipes/copycat_potbelly_oatmeal_chocolate_chip_cookies.htm"
 },
 
 {
@@ -446,7 +446,7 @@
   "CookTime": "10 min",
   "RecipeImage": "http://www.sarcasticcooking.com/wp-content/uploads/2013/09/DSC_0080-1024x1015.jpg",
   "SourceName": "Sarcastic Cooking",
-  "SourceLink": "http://www.sarcasticcooking.com/2013/09/16/copycat-potbellys-mediterranean-veggie-sandwich-and-a-giveaway/"
+  "SourceLink": "http://www.sarcasticcooking.com/2013/09/16/copycat-potbellys-mediterranean-veggie-sandwich-and-a-giveaway"
 },
 
 {
@@ -500,7 +500,7 @@
   "CookTime": "15 min",
   "RecipeImage": "http://www.culinaryhill.com/wp-content/uploads/2014/03/cavatappi-1-IMG_38331.jpg",
   "SourceName": "Culinary Hill",
-  "SourceLink": "http://www.culinaryhill.com/pesto-cavatappi/"
+  "SourceLink": "http://www.culinaryhill.com/pesto-cavatappi"
 },
 
 {
@@ -536,7 +536,7 @@
   "CookTime": "40 min",
   "RecipeImage": "http://ohsodelicioso.com/wp-content/uploads/2014/04/NoodlePenneRosa-3.jpg",
   "SourceName": "Oh So Delicioso",
-  "SourceLink": "http://ohsodelicioso.com/penne-rosa-noodles-company-copycat-2/"
+  "SourceLink": "http://ohsodelicioso.com/penne-rosa-noodles-company-copycat-2"
 },
 {
 		"Restaurant": "Starbucks",
@@ -563,7 +563,7 @@
 		"CookTime": "60 minutes",
 		"RecipeImage": "http://www.copykat.com/wp-content/uploads/2012/12/Starbucks-Pumpkin-Bread.jpg",
 		"SourceName": "copykat.com",
-		"SourceLink": "http://www.copykat.com/2012/12/09/starbucks-pumpkin-bread/"
+		"SourceLink": "http://www.copykat.com/2012/12/09/starbucks-pumpkin-bread"
 	}, {
 		"Restaurant": "Olive Garden",
 		"NameOfDish": "Copycat Olive Garden Minestrone Soup",
@@ -602,7 +602,7 @@
 			"CookTime": "10 minutes",
 			"RecipeImage": "http://cdn.instructables.com/FDF/IFTO/H5R9EXSP/FDFIFTOH5R9EXSP.MEDIUM.jpg",
 			"SourceName": "instructables.com",
-			"SourceLink": "http://www.instructables.com/id/Black-Pepper-Garlic-Chicken/"
+			"SourceLink": "http://www.instructables.com/id/Black-Pepper-Garlic-Chicken"
 		},
 		{
 			"Restaurant": "California Pizza Kitchen",
@@ -643,7 +643,7 @@
 				"CookTime": "10 minutes",
 				"RecipeImage": "http://www.copykat.com/wp-content/uploads/2010/11/barbeque-chicken-pizza.jpg",
 				"SourceName": "copykat.com",
-				"SourceLink": "http://www.copykat.com/2009/02/03/california-pizza-kitchen-original-bbq-pizza/"
+				"SourceLink": "http://www.copykat.com/2009/02/03/california-pizza-kitchen-original-bbq-pizza"
 			}
 
 
