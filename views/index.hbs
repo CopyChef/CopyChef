@@ -1,8 +1,32 @@
-<!-- <div class="search">
-  <form id="restaurant-search-form" method="get"> -->
+<script>
+  $(function () {
+    var availableTags = testing;
+    // var availableTags = testing.reduce(function(a,b){
+    //     if (a.indexOf(b) < 0 ) a.push(b);
+    //     return a;
+    //   },[]);
 
-<!-- <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40"> -->
-<!-- <select name="restaurant">
+
+    $( "#all_search_auto_complete" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head>
+<body>
+
+<!-- <div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div> -->
+
+
+
+
+<h1>Testing - Selector</h1>
+<div class="search">
+  <form id="restaurant-search-form" method="get">
+  <select name="restaurant">
     <option>Select Restaurant</option>
     <option value="California Pizza Kitchen">California Pizza Kitchen</option>
     <option value="The Cheesecake Factory">The Cheesecake Factory</option>
@@ -17,11 +41,17 @@
     <option value="Red Lobster">Red Lobster</option>
     <option value="Starbucks">Starbucks</option>
     <option value="TGI FridayS">TGI Fridays</option>
-</select> -->
+</select>
+  </form>
+</div>
 
-<!-- <input type="submit" value="Search by restaurant!"> -->
-<!-- </form>
-</div> -->
+<h1>Testing - Search By All</h1>
+<div class="search">
+  <form id="all-search-form" method="get">
+    <input type="text" name="keyword" placeholder="Enter search terms" size="40" id="all_search_auto_complete">
+    <input type="submit" value="Search by anything!">
+  </form>
+</div>
 
 
 
@@ -149,3 +179,6 @@
 </div>
 <script src='/javascripts/app.js'></script>
 <script src='/javascripts/ajax.js'></script>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
