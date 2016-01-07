@@ -1,3 +1,28 @@
+<script>
+  $(function () {
+    var availableTags = testing;
+    // var availableTags = testing.reduce(function(a,b){
+    //     if (a.indexOf(b) < 0 ) a.push(b);
+    //     return a;
+    //   },[]);
+
+
+    $( "#all_search_auto_complete" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head>
+<body>
+
+<!-- <div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div> -->
+
+
+
+
 <h1>Testing - Selector</h1>
 <div class="search">
   <form id="restaurant-search-form" method="get">
@@ -23,7 +48,7 @@
 <h1>Testing - Selector</h1>
 <div class="search">
   <form id="all-search-form" method="get">
-    <input type="text" name="keyword" placeholder="Enter search terms" size="40">
+    <input type="text" name="keyword" placeholder="Enter search terms" size="40" id="all_search_auto_complete">
     <input type="submit" value="Search by anything!">
   </form>
 </div>
@@ -154,3 +179,6 @@
 </div>
 <script src='/javascripts/app.js'></script>
 <script src='/javascripts/ajax.js'></script>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

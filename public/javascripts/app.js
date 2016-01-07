@@ -50,7 +50,6 @@ app.CollectionView = Backbone.View.extend({
 
 var testing = [];
 
-
 app.ModelView = Backbone.View.extend({
   initialize: function(){
     console.log('ModelView has been instantiated.');
@@ -59,12 +58,32 @@ app.ModelView = Backbone.View.extend({
   render: function(){
     console.log('ModelView is rendering.');
     var data = this.model.attributes;
-    console.log('LOOK HERE');
-    console.log(data.Restaurant);
-    testing.push(data.Restaurant);
+    // console.log('LOOK HERE');
+    // console.log(data.Restaurant);
     testing.push(data.NameOfDish);
+
+    var newFilter = data.Restaurant
+    var found = jQuery.inArray(newFilter, testing);
+    if (found >= 0) {
+    } else {
+        // Element was not found, add it.
+        testing.push(newFilter);
+    }
+
+    // testing.push(data.Restaurant);
     for (var i = 0; i < data.Tags.length; i++) {
-      testing.push(data.Tags[i]);
+
+      var newFilter = data.Tags[i]
+      var found = jQuery.inArray(newFilter, testing);
+      if (found >= 0) {
+      } else {
+          // Element was not found, add it.
+          testing.push(newFilter);
+      }
+
+
+
+      // testing.push(data.Tags[i]);
     }
     console.log(testing);
     // var keys = Object.keys(data)
