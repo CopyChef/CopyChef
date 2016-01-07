@@ -48,6 +48,9 @@ app.CollectionView = Backbone.View.extend({
 
 });
 
+var testing = [];
+
+
 app.ModelView = Backbone.View.extend({
   initialize: function(){
     console.log('ModelView has been instantiated.');
@@ -56,7 +59,14 @@ app.ModelView = Backbone.View.extend({
   render: function(){
     console.log('ModelView is rendering.');
     var data = this.model.attributes;
-    // console.log('LOOK HERE');
+    console.log('LOOK HERE');
+    console.log(data.Restaurant);
+    testing.push(data.Restaurant);
+    testing.push(data.NameOfDish);
+    for (var i = 0; i < data.Tags.length; i++) {
+      testing.push(data.Tags[i]);
+    }
+    console.log(testing);
     // var keys = Object.keys(data)
     // console.log(data[keys[4]]);
 
