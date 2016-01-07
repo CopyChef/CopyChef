@@ -81,14 +81,14 @@ router.delete('/:id', function(req, res, next) {
 });
 
 /* TEMPORARY ROUTE */
-router.get('/practice', function(req, res, next) {
-  var data = siteData;
-  data.user = req.user;
-  res.render('practice', data);
-});
+// router.get('/practice', function(req, res, next) {
+//   var data = siteData;
+//   data.user = req.user;
+//   res.render('practice', data);
+// });
 
 /* TEMPORARY ROUTE - BY ID */
-router.get('/practice/:id', function(req, res, next) {
+router.get('/individual/:id', function(req, res, next) {
   var data = siteData;
   data.user = req.user;
   model.findById(req.params.id, function (err, recipe){

@@ -7,7 +7,12 @@
 <!---------------------------------------->
 <!--    search box to ajax call.js call -->
 <!---------------------------------------->
-
+<!-- <div class="search">
+  <form id="restaurant-search-form" method="get">
+    <input id="rest-search-field" type="text" name="restaurant" placeholder="Enter name of restaurant">
+    <input type="submit" value="Search by restaurant!">
+  </form>
+</div>  -->
 
 <section id='recipe-listing'>
 </section>
@@ -27,8 +32,8 @@
 
         <div class="card-recipe-tags">
           {{#each Tags}}
-            <div class="chip">{{this}}</div>
-          {{/each}}
+                <div class="chip">{{this}}</div>
+                {{/each}}
         </div>
     </div>
 
@@ -37,15 +42,11 @@
     <!-------------------------------->
     <div class="section" id="recipe-image-section">
         <div class="row">
-            <div class="col s1 m2 l2">
-                <p>.</p>
+            <div class="col l3 m2 s0"></div>
+            <div class="col l6 m8 s12">
+                <img id="recipe-main-image" src={{RecipeImage}}>
             </div>
-            <div class="col s10 m8 l6">
-                <img id="recipe-main-image" src={{RecipeImage}} alt="Portillo's Hamburger" />
-            </div>
-            <div class="col s1 m2 l2">
-                <p>.</p>
-            </div>
+            <div class="col l3 m2 s0"></div>
         </div>
     </div>
 
@@ -55,20 +56,16 @@
     <div class="section">
 
         <div class="row" id="cook-time-row">
-            <div class="col l2 m1 s0">
-                <p>.</p>
-            </div>
-            <div class="col l4 m5 s6">
-                <h5><i class="material-icons">schedule</i> PREP TIME:</h5>
+            <div class="col l2 m1 s0"></div>
+            <div id="cooktime-div" class="col l4 m5 s6">
+                <h5><i class="material-icons">schedule</i> PREPTIME:</h5>
                 <p> {{PrepTime}}</p>
             </div>
-            <div class="col l4 m6 s5">
-                <h5><i class="material-icons">schedule</i> COOK TIME:</h5>
+            <div id="cooktime-div" class="col l4 m6 s5">
+                <h5><i class="material-icons">schedule</i> COOKTIME:</h5>
                 <p> {{CookTime}}</p>
             </div>
-            <div class="col l2 m0 s0">
-                <p>.</p>
-            </div>
+            <div class="col l2 m0 s0"></div>
         </div> <!-- end row -->
 
         <div class="divider"></div>
@@ -78,9 +75,7 @@
     <!-------------------------------->
     <div class="section">
         <div class="row" id="directions-section">
-            <div class="col l2 m1 s0">
-                <p>.</p>
-            </div>
+            <div class="col l2 m1 s0"></div>
 
             <div class="col l4 m5 s12">
                 <h4 class="list-header">INGREDIENTS</h4>
@@ -90,24 +85,18 @@
                     <li>{{this}}</li>
                   {{/each}}
 
-
                 </ul>
             </div>
 
             <div class="col l4 m6 s12">
                 <h4 class="list-header">DIRECTIONS</h4>
                 <ol class="directions-list">
-                     {{#each Directions}}
-                        <li>{{this}}</li>
-                      {{/each}}
-
-
-
+                  {{#each Directions}}
+                    <li>{{this}}</li>
+                  {{/each}}
                 </ol>
             </div>
-            <div class="col l2 m0 s0">
-                <p>.</p>
-            </div>
+            <div class="col l2 m0 s0"></div>
         </div> <!-- end row -->
     </div> <!-- end section -->
 
@@ -116,22 +105,18 @@
     <!------------------------------->
     <div class="section">
         <div class="row">
-            <div class="col l3 m3 s0">
-                <p>.</p>
-            </div>
+            <div id="take-space" class="col l2 m1 s0"></div>
             <div class="col l6 m6 s12">
-                <p>Source: <a href= {{SourceLink}} target="_blank"> {{SourceName}} </a></p>
+              <p>Source: <a href= {{SourceLink}} target="_blank"> {{SourceName}} </a></p>
             </div>
-            <div class="col l3 m3 s0">
-                <p>.</p>
-            </div>
+            <div class="col l2 m0 s0"></div>
         </div> <!-- end row -->
     </div> <!-- end section -->
 
 </article>
+</script>
 
 <!-- loading custom app -->
 <script src='/javascripts/app.js'></script>
-<script src='/javascripts/ajax.js'></script>
-<!-- for search call? -->
+<script src='/javascripts/ajax.js'></script> <!-- for search call? -->
 <!-- will add in app.views later -->
