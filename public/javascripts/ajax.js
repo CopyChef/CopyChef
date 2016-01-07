@@ -10,13 +10,6 @@ $("#restaurant-search-form").change(function(event) {
   app.getRecipeByRestaurant(restaurant);
 });
 
-// $("#all-search-form").change(function(event) {
-//   event.preventDefault();
-//   var keyword = $(":input[name=keyword]", this).val();
-//   app.getRecipeByRestaurant(keyword);
-// });
-
-
 // START get recipe by restaurant search
 app.getRecipeByRestaurant = function getRecipeByRestaurant(restaurant) {
 

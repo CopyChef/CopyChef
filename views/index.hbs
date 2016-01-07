@@ -1,12 +1,7 @@
+<!-- Auto-complete function -->
 <script>
   $(function () {
-    var availableTags = testing;
-    // var availableTags = testing.reduce(function(a,b){
-    //     if (a.indexOf(b) < 0 ) a.push(b);
-    //     return a;
-    //   },[]);
-
-
+    var availableTags = allTags;
     $( "#all_search_auto_complete" ).autocomplete({
       source: availableTags
     });
@@ -15,15 +10,7 @@
 </head>
 <body>
 
-<!-- <div class="ui-widget">
-  <label for="tags">Tags: </label>
-  <input id="tags">
-</div> -->
-
-
-
-
-<h1>Testing - Selector</h1>
+<h1>Drop-down menu of restaurants (currently hard-coded), can delete</h1>
 <div class="search">
   <form id="restaurant-search-form" method="get">
   <select name="restaurant">
@@ -45,14 +32,13 @@
   </form>
 </div>
 
-<h1>Testing - Search By All</h1>
+<h1>Testing - Search By Restaurant, Name of Dish or Tag</h1>
 <div class="search">
   <form id="all-search-form" method="get">
     <input type="text" name="keyword" placeholder="Enter search terms" size="40" id="all_search_auto_complete">
     <input type="submit" value="Search by anything!">
   </form>
 </div>
-
 
 
 <div class="section" id="search-area">
