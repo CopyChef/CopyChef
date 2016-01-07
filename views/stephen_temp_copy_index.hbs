@@ -1,0 +1,184 @@
+<script>
+  $(function () {
+    var availableTags = testing;
+    // var availableTags = testing.reduce(function(a,b){
+    //     if (a.indexOf(b) < 0 ) a.push(b);
+    //     return a;
+    //   },[]);
+
+
+    $( "#all_search_auto_complete" ).autocomplete({
+      source: availableTags
+    });
+  });
+  </script>
+</head>
+<body>
+
+<!-- <div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div> -->
+
+
+
+
+<h1>Testing - Selector</h1>
+<div class="search">
+  <form id="restaurant-search-form" method="get">
+  <select name="restaurant">
+    <option>Select Restaurant</option>
+    <option value="California Pizza Kitchen">California Pizza Kitchen</option>
+    <option value="The Cheesecake Factory">The Cheesecake Factory</option>
+    <option value="Chipotle">Chipotle</option>
+    <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+    <option value="Olive Garden">Olive Garden</option>
+    <option value="Panda Express">Panda Express</option>
+    <option value="Panera Bread">Panera Bread</option>
+    <option value="PF Chang's">PF Chang's</option>
+    <option value="Portillos">Portillos</option>
+    <option value="Potbelly Sandwich Shop">Potbelly Sandwich Shop</option>
+    <option value="Red Lobster">Red Lobster</option>
+    <option value="Starbucks">Starbucks</option>
+    <option value="TGI FridayS">TGI Fridays</option>
+</select>
+  </form>
+</div>
+
+<h1>Testing - Selector</h1>
+<div class="search">
+  <form id="all-search-form" method="get">
+    <input type="text" name="keyword" placeholder="Enter search terms" size="40" id="all_search_auto_complete">
+    <input type="submit" value="Search by anything!">
+  </form>
+</div>
+
+
+
+<div class="section" id="search-area">
+
+  <div class="container">
+    <div class="row">
+      <div class="col l7">
+        <h1>Get Recipes by Restaurant or Keyword</h1>
+      </div>
+      <!-- <select name="dropdown">
+        <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+        <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+        <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+      </select> -->
+      <!-- <div class="col l4">
+          <h4>Keyword Searches</h4>
+          <div class="divider"></div>
+          <h6>Restaurants</h6>
+          <div class="divider"></div>
+          <h6>Appetizers</h6>
+          <div class="divider"></div>
+          <h6>Restaurants</h6>
+          <div class="divider"></div>
+          <h6>Appetizers</h6>
+          <div class="divider"></div>
+          <h6>Restaurants</h6>
+          <div class="divider"></div>
+
+
+      </div> -->
+    </div>
+
+
+    <!-- <div class="row">
+            <div class="col l6 m6 s12">
+                <form id="homepage-search" class="" action="index.html" method="post">
+                    <input type="" name="name" value="" placeholder=""><br><br>
+                    <input type="submit" name="name" value="Get Recipes">
+                </form>
+            </div>
+
+            <div class="col l6 m6 s12">
+                <h4>Keyword Searches</h4>
+                <div class="divider"></div>
+                <h6>Restaurants</h6>
+                <div class="divider"></div>
+                <h6>Appetizers</h6>
+                <div class="divider"></div>
+                <h6>Restaurants</h6>
+                <div class="divider"></div>
+                <h6>Appetizers</h6>
+                <div class="divider"></div>
+                <h6>Restaurants</h6>
+                <div class="divider"></div>
+
+
+            </div>
+        </div> -->
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="container">
+    <!-- <div class="container"> -->
+    <div class="row">
+
+      <section id='recipe-listing'>
+      </section>
+      <script type="text/javascript">
+        function ImgError(source) {
+          source.src = "https://www.newstalk.com/content/000/images/000095/97784_60_news_hub_multi_630x0.png";
+          source.onerror = "";
+          return true;
+        }
+      </script>
+      <!-- start template -->
+      <script type='text/template' id='recipe-template'>
+        <article>
+          <!-- card w image from docs -->
+          <div class="col s12 m6 l4">
+            <div class="card hoverable ">
+              <div class="card-image">
+
+                <img src="<%= RecipeImage %>" onerror="ImgError(this)" />
+                <span class="card-title">
+                  <h5>
+                    <%= Restaurant %>
+                      <%= NameOfDish %>
+                  </h5>
+                </span>
+              </div>
+              <div class="card-content">
+                <p><i class="material-icons">schedule</i>
+                  <%= CookTime %>
+                </p>
+
+                <div class="card-recipe-tags">
+                  <!-- <div class="chip">tag</div> -->
+                  <% for (var i = 0; i < Tags.length; i++) { %>
+                    <div class="chip">
+                      <%= Tags[i] %>
+                    </div>
+                    <%  } %>
+                </div>
+              </div>
+              <!-- <div class="card-action">
+                    <a href="#">This is a link</a>
+                  </div> -->
+            </div>
+          </div>
+          <!-- end card -->
+
+        </article>
+      </script>
+      <!-- end template -->
+
+    </div>
+    <!-- end section -->
+    <!-- </div> -->
+    <!-- end container -->
+
+  </div>
+</div>
+<script src='/javascripts/app.js'></script>
+<script src='/javascripts/ajax.js'></script>
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
