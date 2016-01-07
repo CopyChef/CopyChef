@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <script type="text/javascript" src='/javascripts/jquery.js'></script>
-    <script type="text/javascript" src='/javascripts/underscore.js'></script>
-    <script type="text/javascript" src='/javascripts/backbone.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/stylesheets/materialize.min.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
-    <link rel="stylesheet" href="/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
-    <meta charset="utf-8">
-    <title>CopyChef</title>
-  </head>
-  <body>
-    <nav>
-        <div class="navbar-wrapper container">
-            <a href="#" class="brand-logo">CopyChef</a>
-            <!-- <form>
+
+<head>
+  <title>{{title}}</title>
+  <script type="text/javascript" src='/javascripts/jquery.js'></script>
+  <script type="text/javascript" src='/javascripts/underscore.js'></script>
+  <script type="text/javascript" src='/javascripts/backbone.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/materialize.min.css" media="screen" title="no title" charset="utf-8">
+  <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
+  <meta charset="utf-8">
+  <title>CopyChef</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-wrapper container">
+      <a href="#" class="brand-logo">CopyChef</a>
+      <!-- <form>
                 <div class="input-field">
                   <input id="search" type="search" required>
                   <label for="search"><i class="material-icons">search</i></label>
                   <i class="material-icons">close</i>
                 </div>
             </form> -->
-            <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
-            <ul class="right">
-                <li><a href="/">Home</a></li>
-                <li><a href="/register">Signup</a></li>
-                <li><a href="/login">Login</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- {{#if user}}
+      <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+
+        <!-- <div class="searchbar"><input type="text" placeholder="search"></input></div> -->
+      <ul class="right">
+        <li><a href="/">Home</a></li>
+        {{#if user}}
+        <li><a href="/account/logout">Logout</a></li>
+        {{else}}
+        <li><a href="/account/register">Signup</a></li>
+        <li><a href="/account/login">Login</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+  <!-- {{#if user}}
       Welcome, {{user.username}}! What do you want to make today?
       {{else}}
       Hey! You Should <a href="/account/login">Login</a> or <a href="/account/register">Create</a> a CopyChef account so you can add your favorite recipes!
       {{/if}}
     <hr> -->
 
-    {{{body}}}
-  </body>
+  {{{body}}}
+</body>
+
 </html>
