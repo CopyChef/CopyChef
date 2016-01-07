@@ -20,7 +20,7 @@ router.get('/login', function(req, res){
 
 router.post('/login', passport.authenticate('local', { failureRedirect: '/account'}),
   function(req, res) {
-    res.redirect('/recipes');
+    res.redirect('/');
   }
 );
 

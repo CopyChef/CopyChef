@@ -74,7 +74,6 @@ app.ModelView = Backbone.View.extend({
 });
 
 
-
 // mongoDB support!
 Backbone.Model.idAttribute = "_id";
 

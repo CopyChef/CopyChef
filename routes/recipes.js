@@ -12,20 +12,20 @@ router.get('/', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
   model.findById(req.params.id, function (err, recipe){
-    if (err) console.log(error);
-    // res.json(recipe);
-    res.render('practice', recipe);
+    if (err) console.log(err);
+    res.json(recipe);
+            // res.render('practice', recipe);
   });
 });
 
 // Router for Restaurant search
-router.get('/search/:Restaurant', function(req, res, next) {
-  model.find({ Restaurant: req.params.Restaurant}, function (err, recipe){
-    if (err) console.log(error);
-    res.json(recipe);
-  });
-
-});
+// router.get('/:Restaurant', function(req, res, next) {
+//   model.where({ Restaurant: req.params.Restaurant}, function (err, recipe){
+//     if (err) console.log(err);
+//     res.json(recipe);
+//   });
+//
+// });
 // End router for Restaurant search
 
 
@@ -55,27 +55,6 @@ router.delete('/:id', function(req, res, next) {
     if (err) console.log(err);
     res.json({"Message": "You succesfully removed that recipe"});
   });
-});
-
-router.get('/find/:keyword', function(req, res) {
-  model.find({ 'Restaurant': req.params.keyword,  }, function(err, results) {
-    console.log(results);
-    res.json(results);
-  });
-});
-
-router.post('/submit', function(req, res) {
-
-  var input = req.body;
-  console.log(input);
-  // modify input to match requirements, parse floats, etc
-  model.create({
-
-  }, function(err, result) {
-    if (err) console.log(err);
-    res.json(result);
-  })
-
 });
 
 
