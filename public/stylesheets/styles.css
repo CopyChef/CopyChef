@@ -2,11 +2,17 @@ body {
   color: #353A3B;
   /*background-color: #ede7f6;*/
 }
+div {
+    min-height: 10px;
+}
 input {
   height: 2em;
   width: 100%;
   font-size: 1.5em;
 }
+/*#take-space {
+    float: none;
+}*/
 /*h1 {
   font-weight: bold;
   color: #69f0ae;
@@ -32,13 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 350px;
 }
 .chip {
-  height: 20px;
-  font-size: 1em;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
-  line-height: 20px;
-  padding: 0px 6px;
-  background-color: #e4e4e4;
+  font-size: 1.25em;
 }
 nav {
   background-color: #512da8;
@@ -81,6 +81,8 @@ nav {
 
 #recipe-image-section {
   background-color: #FAF9F5;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 #recipe-heading {
   text-align: center;
@@ -91,13 +93,21 @@ nav {
   overflow: hidden;
   object-fit: cover;
 }
+/*#cook-time-row {
+    background-color: #242525;
+
+}*/
+#cooktime-div {
+    background-color: #757575;
+    color: white;
+}
 .directions-list li {
   font-size: 1.5em;
   font-weight: thin;
   line-height: 120%;
   padding-top: .7em;
   padding-bottom: .7em;
-  border-bottom: dashed 1px #e5e2db;
+  border-bottom: dashed 2px #e5e2db;
 }
 .list-header {
     border-bottom: 1px #e5e2db;
