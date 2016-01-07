@@ -75,9 +75,6 @@ app.ModelView = Backbone.View.extend({
           allTags.push(newFilter);
       }
     }
-
-
-
     console.log('Grabbing template');
     var recipeTemplate = $('#recipe-template').html();
     console.log('Transforming template');

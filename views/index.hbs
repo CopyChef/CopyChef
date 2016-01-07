@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>Drop-down menu of restaurants (currently hard-coded), can delete</h1>
+<h1>Drop-down menu of restaurants (currently hard-coded) -  can delete</h1>
 <div class="search">
   <form id="restaurant-search-form" method="get">
   <select name="restaurant">
@@ -27,7 +27,7 @@
     <option value="Potbelly Sandwich Shop">Potbelly Sandwich Shop</option>
     <option value="Red Lobster">Red Lobster</option>
     <option value="Starbucks">Starbucks</option>
-    <option value="TGI FridayS">TGI Fridays</option>
+    <option value="TGI Fridays">TGI Fridays</option>
 </select>
   </form>
 </div>
@@ -123,7 +123,7 @@
             <div class="card hoverable ">
               <div class="card-image">
 
-                <img src="<%= RecipeImage %>" onerror="ImgError(this)" />
+                <a href="/recipes/individual/<%= _id %>"><img src="<%= RecipeImage %>" onerror="ImgError(this)" /></a>
                 <span class="card-title">
                   <h5>
                     <%= Restaurant %>
