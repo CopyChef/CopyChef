@@ -1,24 +1,24 @@
 body {
   color: #353A3B;
-  background-color: #ede7f6;
+  /*background-color: #ede7f6;*/
 }
 input {
   height: 2em;
   width: 100%;
   font-size: 1.5em;
 }
-h1 {
+/*h1 {
   font-weight: bold;
   color: #69f0ae;
-  text-shadow: 2px 2px #000;
-  padding: 25px;
-}
-h2, h3, h4, h5, h6 {
+  /*text-shadow: 2px 2px #000;*/
+  /*padding: 25px;*/
+/*}*/
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  color: #69f0ae;
-  font-size: 22px;
-  letter-spacing: .4px;
-  text-shadow: 1px 1px #000;
+  /*color: #69f0ae;*/
+  /*font-size: 22px;
+  letter-spacing: .4px;*/
+  /*text-shadow: 1px 1px #000;*/
 }
 .container {
   width: 92%;
@@ -33,7 +33,7 @@ h2, h3, h4, h5, h6 {
 }
 .chip {
   height: 20px;
-  font-size: 12px;
+  font-size: 1em;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
   line-height: 20px;
@@ -55,6 +55,13 @@ nav {
   color: #183a4c;
 }
 #navbar-search {}
+#rest-search-field {
+    background-color: white;
+}
+#restaurant-search-form {
+    width: 25em;
+    max-width: 80%;
+}
 .brand-logo {
   position: relative;
   display: block;
@@ -81,11 +88,21 @@ nav {
 #recipe-main-image {
   width: 100%;
   max-height: 350px;
+  overflow: hidden;
 }
-.directions-list {
+.directions-list li {
   font-size: 1.5em;
   font-weight: thin;
-  line-height: 200%;
+  line-height: 120%;
+  padding-top: .7em;
+  padding-bottom: .7em;
+  border-bottom: dashed 1px #e5e2db;
+}
+.list-header {
+    border-bottom: 1px #e5e2db;
+    background-color: #FAF9F5;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 .material-icons {
   vertical-align: middle;
