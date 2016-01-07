@@ -15,8 +15,6 @@
 </section>
 
 
-
-
 <!-- defining an underscore.js template -->
 <script type='text/template' id='recipe-template'>
 <article>

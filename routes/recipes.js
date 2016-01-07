@@ -9,7 +9,6 @@ router.get('/', function(req, res, next) {
   });
 });
 
-
 router.get('/:id', function(req, res, next) {
   model.findById(req.params.id, function (err, recipe){
     if (err) console.log(err);
