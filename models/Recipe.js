@@ -6,7 +6,7 @@ var RecipeSchema = new mongoose.Schema ({
   Tags: [String],
   Ingredients: [String],
   Directions: [String],
-  Preptime: String,
+  PrepTime: String,
   CookTime: String,
   RecipeImage: String,
   SourceName: String,

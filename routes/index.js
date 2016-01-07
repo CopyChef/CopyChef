@@ -15,11 +15,6 @@ router.get('/', function(req, res, next) {
 });
 
 
-/* TEMPORARY ROUTE */
-router.get('/practice', function(req, res, next) {
-  var data = siteData;
-  data.user = req.user;
-  res.render('practice', data);
-});
+
 
 module.exports = router;
