@@ -1,8 +1,8 @@
-<div class="search">
-  <form id="restaurant-search-form" method="get">
+<!-- <div class="search">
+  <form id="restaurant-search-form" method="get"> -->
 
     <!-- <input type="text" name="restaurant" placeholder="Enter name of restaurant" size="40"> -->
-  <select name="restaurant">
+  <!-- <select name="restaurant">
     <option>Select Restaurant</option>
     <option value="California Pizza Kitchen">California Pizza Kitchen</option>
     <option value="The Cheesecake Factory">The Cheesecake Factory</option>
@@ -16,26 +16,37 @@
     <option value="Red Lobster">Red Lobster</option>
     <option value="Starbucks">Starbucks</option>
     <option value="TGI FridayS">TGI Fridays</option>
-</select>
+</select> -->
 
     <!-- <input type="submit" value="Search by restaurant!"> -->
-  </form>
-</div>
+  <!-- </form>
+</div> -->
 
 
 
 <div class="section" id="search-area">
+
     <div class="container">
         <div class="row">
+                <div class="col l8">
             <h1>Get Recipes by Restaurant or Keyword</h1>
+          </div>
+            <select name="dropdown">
+            <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+            <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+            <option value="Noodles &amp; Company">Noodles &amp; Company</option>
+          </select>
         </div>
-        <div class="row">
+
+
+        <!-- <div class="row">
             <div class="col l6 m6 s12">
                 <form id="homepage-search" class="" action="index.html" method="post">
                     <input type="" name="name" value="" placeholder=""><br><br>
                     <input type="submit" name="name" value="Get Recipes">
                 </form>
             </div>
+
             <div class="col l6 m6 s12">
                 <h4>Keyword Searches</h4>
                 <div class="divider"></div>
@@ -52,13 +63,13 @@
 
 
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
 
 <div class="section">
-
+<div class="container">
   <!-- <div class="container"> -->
     <div class="row">
 
@@ -75,7 +86,7 @@
       <script type='text/template' id='recipe-template'>
       <article>
       <!-- card w image from docs -->
-      <div class="col s6 m4 l3">
+      <div class="col s12 m6 l4">
         <div class="card hoverable">
           <div class="card-image">
 
@@ -110,6 +121,7 @@
   <!-- </div> -->
   <!-- end container -->
 
+</div>
 </div>
 <script src='/javascripts/app.js'></script>
 <script src='/javascripts/ajax.js'></script>

@@ -1,6 +1,7 @@
 body {
     color: #353A3B;
     background-color: #ede7f6;
+
 }
 input {
     height: 2em;
@@ -11,22 +12,49 @@ h1 {
   font-weight: bold;
   color: #fff;
   text-shadow: 2px 2px #000;
+  padding: 25px;
 }
 h2, h3, h4, h5, h6 {
     font-weight: bold;
-    color: #aa00ff;
+    color: #69f0ae;
+    font-size: 22px;
+    letter-spacing: .4px;
+    text-shadow: 1px 1px #000;
+}
+.container {
+  width: 92%;
+}
+.card .card-image .card-title {
+  /*background: rgba(49, 27, 146, .8);*/
+background: rgba(81, 45, 168, .9);
+width: 100%;
+    filter: blur(5px);
+}
+.card .card-image img {
+height: 350px;
+}
+.chip {
+  height: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.6);
+  line-height: 20px;
+  padding: 0px 6px;
+  background-color: #e4e4e4;
 }
 nav {
   background-color: #512da8;
 }
 #search-area {
-    background-color: #183a4c;
+  background-image: url(../media/kitchen_homepage.jpeg);
+  background-size: cover;
     /*background-image: url("../media/kitchen_homepage.jpg");*/
-    background-image: url(../media/kitchen_homepage.jpeg);
-    background-size: cover;
-    background-blend-mode: lighten;
+
+    /*background-blend-mode: lighten;*/
     color: white;
+    height: 350px;
 }
+
 #homepage-search {
     color: #183a4c;
 }
@@ -65,6 +93,14 @@ nav {
 }
 .material-icons {
     vertical-align: middle;
+}
+
+@media only screen and (max-width: 992px) {
+nav .brand-logo {
+    left: 15%;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+}
 }
 
 /*attempt to make image fill full width of card
