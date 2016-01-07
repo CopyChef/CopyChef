@@ -75,17 +75,18 @@
       <script type='text/template' id='recipe-template'>
       <article>
       <!-- card w image from docs -->
-      <div class="col l3 m4 s6">
+      <div class="col s6 m4 l3">
         <div class="card hoverable">
           <div class="card-image">
 
             <img src="<%= RecipeImage %>" onerror="ImgError(this)" />
             <span class="card-title">
-              <p><i class="material-icons">schedule</i><%= CookTime %></p>
+        <h5><%= Restaurant %> <%= NameOfDish %></h5>
             </span>
           </div>
           <div class="card-content">
-            <h5><%= Restaurant %> <%= NameOfDish %></h5>
+                        <p><i class="material-icons">schedule</i><%= CookTime %></p>
+
             <div class="card-recipe-tags">
               <!-- <div class="chip">tag</div> -->
               <% for (var i = 0; i < Tags.length; i++) { %>

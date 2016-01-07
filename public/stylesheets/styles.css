@@ -1,13 +1,23 @@
 body {
     color: #353A3B;
+    background-color: #ede7f6;
 }
 input {
     height: 2em;
     width: 100%;
     font-size: 1.5em;
 }
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+h2, h3, h4, h5, h6 {
     font-weight: bold;
+    color: #aa00ff;
+}
+nav {
+  background-color: #512da8;
 }
 #search-area {
     background-color: #183a4c;
