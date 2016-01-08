@@ -4,6 +4,10 @@ $("#all-search-form").on("submit", function(event) {
   app.getRecipeByAnySearch(keyword);
 });
 
+function refreshData(keyword) {
+  app.getRecipeByAnySearch(keyword);
+}
+
 $("#restaurant-search-form").change(function(event) {
   event.preventDefault();
   var restaurant = $(":input[name=restaurant]", this).val();
