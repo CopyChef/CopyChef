@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>{{title}}</title>
+  <title>CopyChef</title>
   <script type="text/javascript" src='/javascripts/jquery.js'></script>
   <script type="text/javascript" src='/javascripts/underscore.js'></script>
   <script type="text/javascript" src='/javascripts/backbone.js'></script>
@@ -11,35 +11,40 @@
   <link rel="stylesheet" href="/stylesheets/materialize.min.css" media="screen" title="no title" charset="utf-8">
   <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/stylesheets/search.css">
+<link rel="shortcut icon" type="image/png" href="/favico.png"/>
   <meta charset="utf-8">
   <title>CopyChef</title>
 </head>
-
 <body>
-  <nav>
-    <div class="navbar-wrapper container">
-      <a href="#" class="brand-logo">CopyChef</a>
-      <!-- <form>
-                <div class="input-field">
-                  <input id="search" type="search" required>
-                  <label for="search"><i class="material-icons">search</i></label>
-                  <i class="material-icons">close</i>
-                </div>
-            </form> -->
-      <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a> -->
+<!-- Start of nav -->
+<nav>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo"><img src="/media/logo.png"></a>
 
-        <!-- <div class="searchbar"><input type="text" placeholder="search"></input></div> -->
-      <ul class="right">
-        <li><a href="/">Home</a></li>
-        {{#if user}}
-        <li><a href="/account/logout">Logout</a></li>
-        {{else}}
-        <li><a href="/account/register">Signup</a></li>
-        <li><a href="/account/login">Login</a></li>
-        {{/if}}
-      </ul>
-    </div>
-  </nav>
+
+    <form id="all-search-form" method="get">
+    <input type="text" name="keyword" class="searchbox" placeholder="Search" id="all_search_auto_complete"></input>
+
+      <!-- <button class="search-button" type="submit" value="Search by anything!">Search</button> -->
+
+    </form>
+
+
+    <ul id="nav-mobile" class="right">
+      <li><a href="/">Home</a></li>
+      {{#if user}}
+      <li><a href="/account/logout">Logout</a></li>
+      {{else}}
+      <li><a href="/account/login">Login</a></li>
+      <li><a href="/account/register">Register</a></li>
+      {{/if}}
+    </ul>
+  </div>
+</nav>
+
+<!-- end of nav -->
+
   <!-- {{#if user}}
       Welcome, {{user.username}}! What do you want to make today?
       {{else}}
