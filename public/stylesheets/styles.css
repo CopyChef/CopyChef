@@ -27,24 +27,23 @@ h1, h2, h3, h4, h5, h6 {
 RECIPE CARDS
 ===================================
 */
-.card .card-image .card-title {
-  /*background: rgba(49, 27, 146, .8);*/
+.card {
+    min-height: 460px;
+}
+.card-title {
   background: rgba(81, 45, 168, .9);
   width: 100%;
+  /*min-height: 300px;*/
 }
-.card .card-image img {
+.card-image img {
   height: 350px;
+  width: 100%;
+}
+.card-content {
+  color: #353A3B;
 }
 .chip {
   font-size: 1.25em;
-}
-.card-image {
-  width: 100%;
-  height: 55%;
-}
-.card-panel {
-  padding: 10px;
-  min-height: 350px;
 }
 #recipe-card-image {
     object-fit: cover;
@@ -110,6 +109,9 @@ INDIVIDUAL RECIPE PAGE
     padding-top: 1em;
     padding-bottom: 1em;
 }
+img#recipe-main-image.materialboxed.initialized.active {
+    max-height: none;
+}
 
 /*
 ==================================
@@ -127,10 +129,11 @@ OTHER STYLING
   display: block;
 }
 #hero-image {
-  background-image: url(../media/kitchen_homepage.jpeg);
+/*81, 45, 168,*/
+background:
+linear-gradient(rgba(40, 53, 147, 0.3), rgba(0, 0, 0, 0.5)), url(../media/kitchen_homepage.jpeg);
+    /*background-color: rgba(81, 45, 168, .5);*/
   background-size: cover;
-  /*background-image: url("../media/kitchen_homepage.jpg");*/
-  /*background-blend-mode: lighten;*/
   color: white;
   height: 350px;
 }
