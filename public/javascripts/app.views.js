@@ -17,7 +17,7 @@ app.addRecipeView = Backbone.View.extend({
       var allTags = $('#p-Tags').val();
       var tagsFormatted = allTags.split(',');
 
-      var allIngredients = $('#p-Ingredients').val(),
+      var allIngredients = $('#p-Ingredients').val();
       var ingredientsFormatted = allIngredients.split(',');
 
       var data = {
