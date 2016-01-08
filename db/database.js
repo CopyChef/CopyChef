@@ -1,5 +1,6 @@
+require('dotenv').load();
 var mongoose = require('mongoose');
-var connectionString = 'mongodb://localhost/copychef';
+var connectionString = process.env.DATABASE_URL || process.env.MONGOLAB_URI;
 
 mongoose.connect(connectionString);
 
