@@ -47,11 +47,13 @@ Adam led on wireframes, user tested them with an avid online recipe user (his wi
 npm install
 
 ### Unsolved Problems/Hurdles
-- 
 - add ability to update and remove recipes 
-- add more recipes from local restaurants
+- add more recipes from local restaurants i.e. Girl and the Goat, Frontera...
 - adding ability to favorite recipes
 - fix broken images
+- Adding a jQuery method for being able to add ingredients and directions and uploading an image to a new recipe
+
+
 
 
 
