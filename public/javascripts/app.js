@@ -124,5 +124,19 @@ $(document).ready(function(){
   // active.createRecipeView = new app.addRecipeView({
   //   collection: active.collection
   // }); this will be different for us once we get our layouts and such together
-  $(".button-collapse").sideNav(); // for collapsible navbar
+  // $(".button-collapse").sideNav(); // for collapsible navbar
 });
+
+
+
+    // $("#search").autocomplete(
+    //             {
+    //      source:'autocomplete.php',
+    //              minLength:1,
+    //              autoFocus: true,
+    //              delay: 100,
+    //              select: function(event, ui) {
+    //                 $("#search").val(ui.item.label);
+    //                 $("#searchForm").submit();
+    //              }
+    // });
