@@ -41,12 +41,12 @@
 </div> -->
 
 
-<div class="section" id="search-area">
+<div class="section" id="hero-image">
 
   <div class="container">
     <div class="row">
       <div class="col l7">
-        <h1>Get Recipes by Restaurant or Keyword</h1>
+        <h1>Recipes From Your Favorite Restaurants</h1>
       </div>
       <!-- <select name="dropdown">
         <option value="Noodles &amp; Company">Noodles &amp; Company</option>
@@ -108,6 +108,8 @@
 
       <section id='recipe-listing'>
       </section>
+
+      <!-- replace broken img links with default image -->
       <script type="text/javascript">
         function ImgError(source) {
           source.src = "https://www.newstalk.com/content/000/images/000095/97784_60_news_hub_multi_630x0.png";
@@ -115,42 +117,38 @@
           return true;
         }
       </script>
+
       <!-- start template -->
       <script type='text/template' id='recipe-template'>
         <article>
-          <!-- card w image from docs -->
+
+          <!----------------->
+          <!-- recipe card -->
+          <!----------------->
           <div class="col s6 m4 l3">
-            <div class="card hoverable ">
-              <div class="card-image">
+              <!-- cards link to full recipe -->
+              <a href="/recipes/individual/<%= _id %>">
 
-                <a href="/recipes/individual/<%= _id %>"><img src="<%= RecipeImage %>" onerror="ImgError(this)" /></a>
-                <span class="card-title">
-                  <h5>
-                    <%= Restaurant %>
-                      <%= NameOfDish %>
-                  </h5>
-                </span>
-              </div>
-              <div class="card-content">
-                <p><i class="material-icons">schedule</i>
-                  <%= CookTime %>
-                </p>
+                <div class="card hoverable ">
+                  <div class="card-image">
+                        <img id="recipe-card-image" src="<%= RecipeImage %>" onerror="ImgError(this)" />
+                        <span class="card-title">
+                            <h5>
+                            <%= Restaurant %>
+                            <%= NameOfDish %>
+                            </h5>
+                        </span>
+                  </div>
 
-                <div class="card-recipe-tags">
-                  <!-- <div class="chip">tag</div> -->
-                  <% for (var i = 0; i < Tags.length; i++) { %>
-                    <div class="chip">
-                      <%= Tags[i] %>
-                    </div>
-                    <%  } %>
-                </div>
-              </div>
-              <!-- <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div> -->
-            </div>
-          </div>
-          <!-- end card -->
+                  <div class="card-content">
+                    <p><i class="material-icons">schedule</i> <b>Prep:</b> <%= PrepTime %></p>
+                    <p><i class="material-icons">schedule</i> <b>Cook:</b> <%= CookTime %></p>
+                  </div>
+
+              </div> <!-- end card div -->
+
+            </a>
+        </div>  <!-- end col with card template  -->
 
         </article>
       </script>
