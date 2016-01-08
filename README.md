@@ -41,7 +41,7 @@ busy users need easy, quick options.
 
 ### Wireframes
 Adam led on wireframes, user tested them with an avid online recipe user (his wife), refined them, shared them with the team, refined them a bit more. 
-[Wireframes](https://docs.google.com/presentation/d/1fSzfWq3RKGjR2-G6Ppeh-H-BKQaDVOdxd2FzOkStUCk/edit?usp=sharing)
+* [Wireframes](https://docs.google.com/presentation/d/1fSzfWq3RKGjR2-G6Ppeh-H-BKQaDVOdxd2FzOkStUCk/edit?usp=sharing)
 
 ###Installation Instructions 
 npm install
