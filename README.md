@@ -1,10 +1,12 @@
 ![CopyChef logo](http://i.imgur.com/S5DTUJ7.png)
 # CopyChef
 
-An API for delicious copycat recipes. If you have ever want to just stay home, put on your chef hat and recreate your favorite meals from local restaurants then CopyChef will be your new go to for finding those recipes easily and quickly. 
 
+An API for delicious copycat recipes. If you have ever wanted to just stay home, put on your chef hat and recreate your favorite meals from local restaurants then CopyChef will be your new go to for finding those recipes easily and quickly. 
+
+[Visit CopyChef](https://copychef.herokuapp.com/)
 ### Approach
-Copy cat recipe sites are abundant and we wanted to give users of our API a quick and simple way access those recipes since most of them are found after going through quite a clicks and taps. We wanted the user to be able to search for recipes by restaurant, recipe, food type, and tags associated with each recipe. We divided up the work based on our strengths. We talked out the wireframes and got to work building our framework and database, while that was complete the rest of our team work on creating styling and templates for views. 
+Copy cat recipe sites are abundant and we wanted to give users of our API a quick and simple way access those recipes since most of them are found after going through too many clicks and taps. We wanted the user to be able to search for recipes by restaurant, recipe, food type, and tags associated with each recipe. We divided up the work based on our strengths. We talked out the wireframes and got to work, Stephen and Lidia started on Express, Backbone, and MongoDB while that was complete Nick and Adam worked on creating styling and templates for views. We also each contributed to our sample data by each contributing some of the recipes we wanted to see on our api.
 Front-end and back-end came together on day 3 and we started figuring out what needed to be done to make the integration complete. 
 
 
@@ -18,11 +20,11 @@ Front-end and back-end came together on day 3 and we started figuring out what n
 * Passport
 * Materialize
 
-
-###### Why We Used MaterializeCSS
+We wanted to use backbone as a challenge to ourselves 
+Why We Used MaterializeCSS
 Adam built out wireframes into static html/css pages. He has done other sites with pure CSS from scratch without libraries/frameworks like Materialize or Bootstrap and wanted experience with a library of default stylings. The project timeframe required speedy development which a library could provide. Significant customizations were made to the defaults in our own styles.css file. Nick did very significant front end work as well including styling and worked out a style guide with Adam.
 
-###### We We Didn’t Use LESS
+We We Didn’t Use LESS
 Adam researched the LESS CSS pre-processor. Adding the extra step of compiling and the new learning required for both Nick and Adam didn’t seem worth it given that our styles.css is only 150 lines long.
 
 
@@ -45,9 +47,10 @@ Adam led on wireframes, user tested them with an avid online recipe user (his wi
 npm install
 
 ### Unsolved Problems/Hurdles
-- adding ability to favorite recipes
-- add ability to update and remove recipes
+- 
+- add ability to update and remove recipes 
 - add more recipes from local restaurants
+- adding ability to favorite recipes
 - fix broken images
 
 
