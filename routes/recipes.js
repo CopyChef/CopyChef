@@ -13,7 +13,6 @@ router.get('/:id', function(req, res, next) {
   model.findById(req.params.id, function (err, recipe){
     if (err) console.log(err);
     res.json(recipe);
-            // res.render('practice', recipe);
   });
 });
 
@@ -80,14 +79,7 @@ router.delete('/:id', function(req, res, next) {
   });
 });
 
-/* TEMPORARY ROUTE */
-// router.get('/practice', function(req, res, next) {
-//   var data = siteData;
-//   data.user = req.user;
-//   res.render('practice', data);
-// });
-
-/* TEMPORARY ROUTE - BY ID */
+/* individual recipe - BY ID */
 router.get('/individual/:id', function(req, res, next) {
   var data = siteData;
   data.user = req.user;
@@ -96,7 +88,6 @@ router.get('/individual/:id', function(req, res, next) {
     console.log(recipe);
     res.render('individualrecipe', recipe);
   });
-  // res.render('practice', data);
 });
 
 var siteData = {

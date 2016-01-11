@@ -28,65 +28,6 @@ app.Collection = Backbone.Collection.extend({
   }
 });
 
-
-// TESTING IN BETWEEN HERE
-
-// app.addRecipeView = Backbone.View.extend({
-//   el: $('#add-recipe'),
-//   initialize: function() {
-//     console.log('AddRecipeView instantiated');
-//     this.$el.children('button').hide();
-//   },
-//   events: {
-//     'click button': 'addRecipe',
-//     'blur input': 'validateInput'
-//   },
-//   addRecipe: function () {
-//     var confirmation = confirm('Are you sure you want to save this?');
-//     if(confirmation) {
-//       var data = {
-//         Restaurant: $('#p-Restaurant').val(),
-//         NameOfDish: $('#p-NameOfDish').val(),
-//         Tags: $('#p-Tags').val(),
-//         Ingredients: $('#p-Ingredients').val(),
-//         Directions: $('#p-Directions').val(),
-//         PrepTime: $('#p-PrepTime').val(),
-//         CookTime: $('#p-CookTime').val(),
-//         RecipeImage: $('#p-RecipeImage').val(),
-//         SourceName: $('#p-SourceName').val(),
-//         SourceLink: $('#p-SourceLink').val()
-//       }
-//       console.log(data);
-//       this.collection.create(data);
-//     }
-//   },
-//   validateInput: function() {
-//     var allTheInputs = this.$el.children('input');
-//     console.log(allTheInputs);
-//     var validValues = 0;
-//
-//     for (var i = 0; i < allTheInputs.length; i++) {
-//       var selector = $(allTheInputs)[i];
-//       //
-//       var val = $(selector).val();
-//       if (val.length > 0) {
-//         validValues++;
-//       }
-//     }
-//
-//     if (validValues != allTheInputs.length) {
-//       this.$el.children('button').hide();
-//       this.$el.children('.error').html('Some fields are missing values');
-//     }else {
-//       this.$el.children('button').show();
-//       this.$el.children('.error').html('');
-//     }
-//
-//   }
-// });
-
-// TESTING IN BETWEEN HERE
-
 app.CollectionView = Backbone.View.extend({
   el: $('#recipe-listing'),
   initialize: function(){
@@ -107,10 +48,6 @@ app.CollectionView = Backbone.View.extend({
 
 });
 
-var allTags = [];
-
-
-
 // mongoDB support!
 Backbone.Model.idAttribute = "_id";
 
@@ -120,23 +57,4 @@ $(document).ready(function(){
   active.createRecipeView = new app.addRecipeView({
       collection: active.collection
     });
-   // possibly comment out later, but leave for now
-  // active.createRecipeView = new app.addRecipeView({
-  //   collection: active.collection
-  // }); this will be different for us once we get our layouts and such together
-  // $(".button-collapse").sideNav(); // for collapsible navbar
 });
-
-
-
-    // $("#search").autocomplete(
-    //             {
-    //      source:'autocomplete.php',
-    //              minLength:1,
-    //              autoFocus: true,
-    //              delay: 100,
-    //              select: function(event, ui) {
-    //                 $("#search").val(ui.item.label);
-    //                 $("#searchForm").submit();
-    //              }
-    // });

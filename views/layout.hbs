@@ -7,21 +7,25 @@
   <script type="text/javascript" src='/javascripts/underscore.js'></script>
   <script type="text/javascript" src='/javascripts/backbone.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/materialize.min.css" media="screen" title="no title" charset="utf-8">
-  <script type="text/javascript" src="/javascripts/materialize.min.js"></script>
   <link rel="stylesheet" href="/stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/stylesheets/search.css">
-<link rel="shortcut icon" type="image/png" href="/favico.png"/>
+  <link rel="shortcut icon" type="image/png" href="/favico.png"/>
   <meta charset="utf-8">
   <title>CopyChef</title>
 </head>
+
+
 <body>
 <!-- Start of nav -->
 <nav>
   <div class="nav-wrapper">
     <a href="/" class="brand-logo"><img src="/media/logo.png"></a>
 
+
+<!-- Auto-complete function -->
     <script>
       $(function () {
         var availableTags = allTags;
@@ -30,7 +34,6 @@
           select: function(event, ui) {
              $("#all_search_auto_complete").val(ui.item.label);
              var userSelectedSearch = this.value;
-            //  $("#all-search-form").submit();
              // call a function that will submit the ajax/submit post/etc
             refreshData(userSelectedSearch);
           }
@@ -38,10 +41,9 @@
       });
       </script>
 
-
+<!-- Search form -->
     <form id="all-search-form" method="get">
-    <input type="text" name="keyword" class="searchbox" placeholder="Search" id="all_search_auto_complete"></input>
-
+      <input type="text" name="keyword" class="searchbox" placeholder="Search" id="all_search_auto_complete"></input>
     </form>
 
 
@@ -60,14 +62,8 @@
 
 <!-- end of nav -->
 
-  <!-- {{#if user}}
-      Welcome, {{user.username}}! What do you want to make today?
-      {{else}}
-      Hey! You Should <a href="/account/login">Login</a> or <a href="/account/register">Create</a> a CopyChef account so you can add your favorite recipes!
-      {{/if}}
-    <hr> -->
-
   {{{body}}}
+  
 </body>
 
 </html>
