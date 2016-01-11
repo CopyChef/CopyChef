@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
   res.render('index', data);
 });
 
-// TESTING
+// get for add recipe
 router.get('/add_recipe', function(req, res, next) {
   var data = siteData;
   data.user = req.user;

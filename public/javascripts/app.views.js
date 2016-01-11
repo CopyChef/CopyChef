@@ -1,6 +1,10 @@
 var app = app || {};
 var active = active || {};
 
+
+// Hoisting the allTags variable, which will hold restaurant name, nameofdish and tags, to be able to sort through all three at once
+var allTags = [];
+
 app.addRecipeView = Backbone.View.extend({
   el: $('#add-recipe'),
   initialize: function() {
@@ -16,10 +20,8 @@ app.addRecipeView = Backbone.View.extend({
     if(confirmation) {
       var allTags = $('#p-Tags').val();
       var tagsFormatted = allTags.split(',');
-
       var allIngredients = $('#p-Ingredients').val();
       var ingredientsFormatted = allIngredients.split(',');
-
       var data = {
         Restaurant: $('#p-Restaurant').val(),
         NameOfDish: $('#p-NameOfDish').val(),
@@ -71,6 +73,7 @@ app.ModelView = Backbone.View.extend({
     var data = this.model.attributes;
     allTags.push(data.NameOfDish);
     var newFilter = data.Restaurant
+    // This code helps remove duplicate restaurants and tags from the allTags array.
     var found = jQuery.inArray(newFilter, allTags);
     if (found >= 0) {
     } else {
@@ -92,7 +95,6 @@ app.ModelView = Backbone.View.extend({
     var compileTpl = _.template(recipeTemplate);
     console.log('Creating HTML from template & model data');
     var html = compileTpl(data);
-    // console.log(html);
     console.log('Rendering to page....');
     this.$el.append(html);
   }
